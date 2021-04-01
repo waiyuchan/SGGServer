@@ -1,0 +1,18 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+#    url: jdbc:mysql://localhost:3306/test?characterEncoding=utf8&useSSL=false&autoReconnect=false&allowPublicKeyRetrieval=true
+    url: jdbc:mysql://localhost:3306/SGGDB?characterEncoding=utf8&useSSL=false&autoReconnect=false&allowPublicKeyRetrieval=true
+    username: root
+    password: sgg-mysql-2020
+#    password: FENGfuWEI960804
+
+
+server:
+  port: 8080
+
+
+
+mybatis:
+  basepackage: com.unconme.sgg.dao.mapper
+  mapper-locations: ["classpath*:mapper/*.xml","classpath*:com/gitee/sunchenbin/mybatis/actable/mapping/*/*.xml"]
